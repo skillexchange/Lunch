@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+$stdin = fopen('php://stdin', 'r');
+$data = '';
+while(true) {
+  print '> ';
+  $data .= fgets($stdin);
+  if (preg_match('/\\\\$/', $data)==1) {
+    $data = trim($data, "\x00..\x1F \x5C");
+  } else {
+    eval($data);
+    $data = '';
+  }
+}
