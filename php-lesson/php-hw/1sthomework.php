@@ -17,15 +17,15 @@
 //  print $i."\n";
 
   $messy = array($m,$e,$s,$y);
-  var_dump($messy); 
 
-  echo $messy[1]."\n";
+//  var_dump($messy); 
+//  echo $messy[1]."\n";
 
-  for ($i=0; $i<$messy.length; $i++){
-    if($messy[i] % 3 == 0){
-      echo 'Fizz';
+  for ($i=0; $i<count($messy); $i++){
+    if($messy[$i] % 3 == 0){
+      echo "Fizz\n";
     }else{
-      echo 'non-Fizz';
+      echo "non-Fizz\n";
     }
   }  
 ?>
