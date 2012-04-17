@@ -11,13 +11,13 @@
              'g'=>9, 'h'=>10, 'i'=>11,
              'j'=>12, 'k'=>13, 'm'=>14, 'n'=>15);
 
-  foreach ($array as $value){
+  foreach ($array as $key => $value){
     if($value%3 == 0){ 
-      echo 'Fizz'."\n";
+      echo $key.': Fizz'."\n";
     }  if($value%5 == 0){ 
-      echo 'Buzz'."\n";
+      echo $key.': Buzz'."\n";
     }  if($value%15 == 0){ 
-      echo 'FizzBuzz'."\n";
+      echo $key.': FizzBuzz'."\n";
     }
   }
 
