@@ -31,5 +31,15 @@
              'g'=>9, 'h'=>4, 'i'=>11,
              'j'=>12, 'k'=>13, 'm'=>14, 'n'=>15);
 
+  $i=0; 
+
+  foreach ($array as $key => $value){
+    if($value > $i){ 
+      $i=$value;
+      $k=$key;
+    }  
+  }
+
+  echo $k."\n";
 
 ?>
