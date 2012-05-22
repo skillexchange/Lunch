@@ -14,11 +14,11 @@
    * control statement
    * if,else
    */
-  if($i==1){
-      echo 'i is 1'."\n"; 
-  }else{
-      echo 'i is not 1'; 
-  }
+//  if($i==1){
+//      echo 'i is 1'."\n"; 
+//  }else{
+//      echo 'i is not 1'; 
+//  }
 
   /**
    * string
@@ -46,7 +46,7 @@
 
 
   //echo strlen('messy')."\n";
-  //echo mb_strlen('メッシー')."\n";
+  //echo mb_strlen('メッシー','UTF8')."\n";
 
   $index = strpos('messy', 'sy');
   //echo $index."\n";
@@ -65,12 +65,12 @@
   // echo $first;
   
   $end=array_pop($array);
-  // var_dump($array);
-  // echo $end;
+   // var_dump($array);
+   //var_dump($end);
 
   $array = array('m' => 1,  'e' => 2, 's' => 3); 
-  //echo $array['e']."\n";
-  //echo count($array)."\n";
+  echo $array['e']."\n";
+  echo count($array)."\n";
 
 
   /**
