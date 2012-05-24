@@ -17,7 +17,7 @@
   if($i==1){
       echo 'i is 1'."\n"; 
   }else{
-      echo 'i is not 1'; 
+      echo 'i is not 1'."\n"; 
   }
 
   /**
@@ -45,28 +45,30 @@
   //echo "{$text}!!!!!\n";  
 
 
-  //echo strlen('messy')."\n";
-  //echo mb_strlen('メッシー')."\n";
+    echo strlen('messy')."\n";
+    echo mb_strlen('メッシー')."\n";
+    echo mb_strwidth('メッシー')."\n";
+    echo mb_strlen('メッシー')."\n";
 
   $index = strpos('messy', 'sy');
-  //echo $index."\n";
+    echo $index."\n";
   $substr = substr('messy', 0, 2);
-  //echo $substr."\n";
+    echo $substr."\n";
   
   /**
    * 配列と連想配列
    */
   $array = array('m', 'e', 's', 's', 'y');
-  //echo $array[0]."\n";
-  //echo count($array)."\n";
+  echo $array[0]."\n";
+  echo count($array)."\n";
   
   $first=array_shift($array);
-  // var_dump($array);
-  // echo $first;
+   var_dump($array);
+   echo $first;
   
   $end=array_pop($array);
-  // var_dump($array);
-  // echo $end;
+   var_dump($array);
+   echo $end;
 
   $array = array('m' => 1,  'e' => 2, 's' => 3); 
   //echo $array['e']."\n";
