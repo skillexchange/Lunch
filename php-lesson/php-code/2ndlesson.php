@@ -14,11 +14,19 @@
    * control statement
    * if,else
    */
+<<<<<<< HEAD
   if($i==1){
       echo 'i is 1'."\n"; 
   }else{
       echo 'i is not 1'."\n"; 
   }
+=======
+//  if($i==1){
+//      echo 'i is 1'."\n"; 
+//  }else{
+//      echo 'i is not 1'; 
+//  }
+>>>>>>> cddedf1939eb3badd0cdcc0cc8b23eaade0fd18c
 
   /**
    * string
@@ -45,10 +53,15 @@
   //echo "{$text}!!!!!\n";  
 
 
+<<<<<<< HEAD
     echo strlen('messy')."\n";
     echo mb_strlen('メッシー')."\n";
     echo mb_strwidth('メッシー')."\n";
     echo mb_strlen('メッシー')."\n";
+=======
+  //echo strlen('messy')."\n";
+  //echo mb_strlen('メッシー','UTF8')."\n";
+>>>>>>> cddedf1939eb3badd0cdcc0cc8b23eaade0fd18c
 
   $index = strpos('messy', 'sy');
     echo $index."\n";
@@ -67,12 +80,17 @@
    echo $first;
   
   $end=array_pop($array);
+<<<<<<< HEAD
    var_dump($array);
    echo $end;
+=======
+   // var_dump($array);
+   //var_dump($end);
+>>>>>>> cddedf1939eb3badd0cdcc0cc8b23eaade0fd18c
 
   $array = array('m' => 1,  'e' => 2, 's' => 3); 
-  //echo $array['e']."\n";
-  //echo count($array)."\n";
+  echo $array['e']."\n";
+  echo count($array)."\n";
 
 
   /**
