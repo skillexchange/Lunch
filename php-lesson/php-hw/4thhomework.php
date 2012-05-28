@@ -24,10 +24,22 @@
   * この配列を昇順に並び替えてください
   * */
 
-  $array = array(10,3,2,4,1,14,9,7,8);
+   $array = array(10,3,2,4,1,14,9,7,8);
   for ($i=0; $i<count($array)-1; $i++){
     for ($h=0; $h<count($array)-1; $h++){
       if ($array[$h] > $array[$h+1]){
+        $a = $array[$h];
+        $array[$h] = $array[$h+1];
+        $array[$h+1] = $a;
+      }   
+    }
+  }
+  var_dump ($array);
+
+ $array = array(10,3,2,4,1,14,9,7,8);
+  for ($i=0; $i<count($array)-1; $i++){
+    for ($h=0; $h<count($array)-1; $h++){
+      if ($array[$h] < $array[$h+1]){
         $a = $array[$h];
         $array[$h] = $array[$h+1];
         $array[$h+1] = $a;
