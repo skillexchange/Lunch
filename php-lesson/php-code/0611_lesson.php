@@ -21,7 +21,7 @@
 // without using "w"
 // match "kyagi.jpg"
   $pattern_all = '/k[^\/]*/';
-//  $pattern_all = '/k[^\.]*/';
+//  $pattern_all = '/k[^\.]*/';  // => kyagi
   
   preg_match($pattern_all, $subject2, $matches2);
   preg_match($pattern_all, $subject3, $matches3);

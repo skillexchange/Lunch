@@ -51,6 +51,24 @@
     echo $konnkatu.'<br>';
   }  
   
-  echo $_POST["request2"];
+  echo $_POST["request2"].'<br><br>';
+
+
+// advance  
+
+  echo '<form action="" method="GET">'.
+       '<input type="text" name="request3">'.
+       '<input type="submit" name="get" value="advenced get request">'.
+       '</form>';
+
+  if (preg_match('/^niku/', $_GET["request3"])){ 
+    echo $niku.'<br>';
+  }else if (preg_match('/^hawaii/', $_GET["request3"])){
+    echo $hawaii.'<br>';
+  }else if (preg_match('/^konnkatsu/', $_GET["request3"])){
+    echo $konnkatu.'<br>';
+  }
+ 
+  echo $_GET["request3"].'<br><br>';
 
 ?>
