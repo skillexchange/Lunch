@@ -61,7 +61,9 @@
        '<input type="submit" name="get" value="advenced get request">'.
        '</form>';
 
-  if (preg_match('/^niku/', $_GET["request3"])){ 
+  if (preg_match('/^((niku){2,})$/', $_GET["request3"], $matches3)){ 
+
+    print_r($matches3);
     echo $niku.'<br>';
   }else if (preg_match('/^hawaii/', $_GET["request3"])){
     echo $hawaii.'<br>';
