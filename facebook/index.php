@@ -16,7 +16,7 @@
     'secret' => $appkey[secret],
   ));
 
-  echo '<h1>List of "Liked" Photos on Facebook</h1>';
+  echo '<h1>List of my "Liked" objects on Facebook</h1>';
 
 // Get User ID
   $user = $facebook->getUser();
