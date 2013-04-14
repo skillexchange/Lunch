@@ -20,8 +20,8 @@
   require 'facebook.php';
 
   $facebook = new Facebook(array(
-    'appId'  => '476325702386495',
-    'secret' => '841996a588d4f031a4f52791118c0e59',
+    'appId'  => '',
+    'secret' => '',
   ));
 
 // Get User ID
